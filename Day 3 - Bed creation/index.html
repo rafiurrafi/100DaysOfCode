@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Happy bed - I wanna see you</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Logo</a>
+        <div class="navbar-busket">
+          <div class="busket-price">
+            <p>
+              was : <strong>$<span id="oldPrice">0</span></strong>
+            </p>
+            <h4>
+              Now : <strong>$<span id="price">300</span></strong>
+            </h4>
+          </div>
+          <a href="#" class="btn busket-btn"> Add to Busket </a>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="bed-creation">
+        <div class="bed-creation__img">
+          <img src="img/shadow_wrk_3ft.jpg" class="img__shadow" alt="" />
+          <img src="img/bedbase_3ft_6i_30.png" alt="" />
+          <img src="img/bedding_legs_3ft.webp" alt="" />
+          <img src="img/ankara_lined_3ft_6i30.png" alt="" />
+        </div>
+        <div class="bed-creation__model">
+          <div class="bed-feature">
+            <!-- First Section  -->
+            <div class="bed-feature__header">
+              <div class="bed-feature__title">
+                <i class="fa fa-star fa-2x bed-feature__title--icon"></i>
+                <div class="bed-feature__title--name">
+                  <h5>Size</h5>
+                  <p>Double 4ft 6'</p>
+                </div>
+              </div>
+              <div class="btn btn-options bed-feature__btn">
+                <span id="size"></span> options available
+              </div>
+              <i class="fa fa-arrow-down bed-feature__icon"></i>
+            </div>
+            <div class="bed-feature__optionsContainer">
+              <div class="bed-feature__options">
+                <div
+                  class="bed-feature__option size active"
+                  onclick="createBed(event, 'size', 10)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option size"
+                  onclick="createBed(event, 'size', 20)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option size"
+                  onclick="createBed(event, 'size', 30)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option size"
+                  onclick="createBed(event, 'size', 40)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option size"
+                  onclick="createBed(event, 'size', 50)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option size"
+                  onclick="createBed(event, 'size', 60)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+              </div>
+            </div>
+            <!-- Second Section  -->
+            <div class="bed-feature__header">
+              <div class="bed-feature__title">
+                <i class="fa fa-star fa-2x bed-feature__title--icon"></i>
+                <div class="bed-feature__title--name">
+                  <h5>Colour</h5>
+                  <p>Asphalt velvet</p>
+                </div>
+              </div>
+              <div class="btn btn-options bed-feature__btn">
+                <span id="colour"></span> options available
+              </div>
+              <i class="fa fa-arrow-down bed-feature__icon"></i>
+            </div>
+            <div class="bed-feature__optionsContainer">
+              <div class="bed-feature__options">
+                <div
+                  class="bed-feature__option colour active"
+                  onclick="createBed(event, 'colour', 70)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option colour"
+                  onclick="createBed(event, 'colour', 80)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option colour"
+                  onclick="createBed(event, 'colour', 90)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option colour"
+                  onclick="createBed(event, 'colour', 100)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option colour"
+                  onclick="createBed(event, 'colour', 110)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option colour"
+                  onclick="createBed(event, 'colour', 120)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+              </div>
+            </div>
+            <!-- Third Section  -->
+            <div class="bed-feature__header">
+              <div class="bed-feature__title">
+                <i class="fa fa-star fa-2x bed-feature__title--icon"></i>
+                <div class="bed-feature__title--name">
+                  <h5>Headboard</h5>
+                  <p>Double 4ft 6'</p>
+                </div>
+              </div>
+              <div class="btn btn-options bed-feature__btn">
+                <span id="headboard"></span> options available
+              </div>
+              <i class="fa fa-arrow-down bed-feature__icon"></i>
+            </div>
+            <div class="bed-feature__optionsContainer">
+              <div class="bed-feature__options">
+                <div
+                  class="bed-feature__option headboard active"
+                  onclick="createBed(event, 'headboard', 130)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option headboard"
+                  onclick="createBed(event, 'headboard', 140)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option headboard"
+                  onclick="createBed(event, 'headboard', 150)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option headboard"
+                  onclick="createBed(event, 'headboard', 160)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option headboard"
+                  onclick="createBed(event, 'headboard', 170)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option headboard"
+                  onclick="createBed(event, 'headboard', 180)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+              </div>
+            </div>
+            <!-- Forth Section  -->
+            <div class="bed-feature__header">
+              <div class="bed-feature__title">
+                <i class="fa fa-star fa-2x bed-feature__title--icon"></i>
+                <div class="bed-feature__title--name">
+                  <h5>Base Depth</h5>
+                  <p>14'</p>
+                </div>
+              </div>
+              <div class="btn btn-options bed-feature__btn">
+                <span id="base_depth"></span> options available
+              </div>
+              <i class="fa fa-arrow-down bed-feature__icon"></i>
+            </div>
+            <div class="bed-feature__optionsContainer">
+              <div class="bed-feature__options">
+                <div
+                  class="bed-feature__option base_depth active"
+                  onclick="createBed(event, 'base_depth', 190)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option base_depth"
+                  onclick="createBed(event, 'base_depth', 100)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option base_depth"
+                  onclick="createBed(event, 'base_depth', 200)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option base_depth"
+                  onclick="createBed(event, 'base_depth', 210)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option base_depth"
+                  onclick="createBed(event, 'base_depth', 220)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option base_depth"
+                  onclick="createBed(event, 'base_depth', 230)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option base_depth"
+                  onclick="createBed(event, 'base_depth', 230)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+              </div>
+            </div>
+            <!-- Fifth Section  -->
+            <div class="bed-feature__header">
+              <div class="bed-feature__title">
+                <i class="fa fa-star fa-2x bed-feature__title--icon"></i>
+                <div class="bed-feature__title--name">
+                  <h5>Storage Option</h5>
+                  <p>Double 4ft 6'</p>
+                </div>
+              </div>
+              <div class="btn btn-options bed-feature__btn">
+                <span id="storage_option"></span> options available
+              </div>
+              <i class="fa fa-arrow-down bed-feature__icon"></i>
+            </div>
+            <div class="bed-feature__optionsContainer">
+              <div class="bed-feature__options">
+                <div
+                  class="bed-feature__option storage_option active"
+                  onclick="createBed(event, 'storage_option', 240)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option storage_option"
+                  onclick="createBed(event, 'storage_option', 250)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option storage_option"
+                  onclick="createBed(event, 'storage_option', 260)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option storage_option"
+                  onclick="createBed(event, 'storage_option', 270)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option storage_option"
+                  onclick="createBed(event, 'storage_option', 280)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+                <div
+                  class="bed-feature__option storage_option"
+                  onclick="createBed(event, 'storage_option', 290)"
+                >
+                  <img src="" alt="Bed image" />
+                  <p>Name 1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <script src="js/popper.js"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
