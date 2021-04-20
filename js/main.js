@@ -1,4 +1,4 @@
-const movies = [
+let movies = [
   { _id: 2, name: "Puspa", rating: 7.6 },
   { _id: 1, name: "Ek tha tiger", rating: 5.6 },
   { _id: 4, name: "Lucky the racer", rating: 8.0 },
@@ -47,7 +47,11 @@ function sortMovie(e) {
   order = order === "asc" ? "desc" : "asc";
 }
 function deleteMovie(id) {
-  return movies.filter((movie) => movie._id !== id);
+  const filteredMovies = movies.filter((movie) => movie._id !== id);
+  const list = document.querySelector("#list");
+  list.innerHTML = "";
+  movies = filteredMovies;
+  displayMovie();
 }
 
 document.addEventListener("click", sortMovie);
