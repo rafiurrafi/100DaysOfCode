@@ -25,4 +25,26 @@ function displayMovie() {
   });
 }
 
+function compare(key, order = "asc") {
+  return function (a, b) {
+    var valueA, valueB, comparison;
+    valueA = typeof a[key] === "string" ? a[key].toUpperCase() : a[key];
+    valueB = typeof b[key] === "string" ? b[key].toUpperCase() : b[key];
+
+    if (valueA > valueB) comparison = 1;
+    else if (valueA < valueB) comparison = -1;
+    else comparison = 0;
+
+    return order === "desc" ? comparison * -1 : comparison;
+  };
+}
+function sortMovie(e) {
+  movies.sort(compare(e.target.id));
+  const list = document.querySelector("#list");
+  list.innerHTML = "";
+  displayMovie();
+}
+
+document.addEventListener("click", sortMovie);
+
 document.addEventListener("DOMContentLoaded", displayMovie);
