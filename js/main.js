@@ -44,6 +44,9 @@ function sortMovie(e) {
   list.innerHTML = "";
   displayMovie();
 }
+function deleteMovie(id) {
+  return movies.filter((movie) => movie._id !== id);
+}
 
 document.addEventListener("click", sortMovie);
 
