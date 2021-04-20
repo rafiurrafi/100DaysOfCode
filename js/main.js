@@ -38,11 +38,13 @@ function compare(key, order = "asc") {
     return order === "desc" ? comparison * -1 : comparison;
   };
 }
+let order = "asc";
 function sortMovie(e) {
-  movies.sort(compare(e.target.id));
+  movies.sort(compare(e.target.id, order));
   const list = document.querySelector("#list");
   list.innerHTML = "";
   displayMovie();
+  order = order === "asc" ? "desc" : "asc";
 }
 function deleteMovie(id) {
   return movies.filter((movie) => movie._id !== id);
